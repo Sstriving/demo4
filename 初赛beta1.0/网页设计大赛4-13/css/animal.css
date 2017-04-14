@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    min-width: 650px;
+}
+.title{
+    width: 100%;
+    height: 45px;
+    line-height:45px;
+    transition: all 0.5s;
+    /*border: 1px solid silver;*/
+    background-color: rgba(0, 0, 0, 0.93);
+}
+.title_1{
+    width: 100%;
+    height: 100%;
+}
+.ul_1{
+    width: 50%;
+    margin-left: 45%;
+    height: 100%;
+    color: #DDDDDD;
+    position: relative;
+}
+.li_list{
+    float: left;
+    list-style: none;
+    width: 19%;
+    height: 100%;
+    text-align: center;
+    font-size: 1vw;
+    transition: all 0.5s;
+}
+.li_list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+.li_list a:hover{
+    color: #4282CA;
+    cursor:pointer;
+}
+.animal{
+    font-size: 2.5em;
+    color: #00A3F0;
+    margin-top: 3%;
+    /*border: 1px solid silver;*/
+    text-align: center;
+}
+.animal-text{
+    width: 80%;
+    margin: 2% auto;
+    font-size: 1.2vw;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+}
+.div_ul{
+    width: 100%;
+    height: 810px;
+    overflow: hidden;
+}
+.footgd{
+    width: 100%;
+    height: 7%;
+    background: -webkit-linear-gradient(top, white 0%,#EBF8FE 100%);
+    background: -o-linear-gradient(top, white 0%,#EBF8FE 100%);
+    background: -ms-linear-gradient(top, white 0%,#EBF8FE 100%)
+}
+.animal-info{
+    width: 420px;
+    margin: 0 auto;
+    height: 1353px;
+    transition:all 0.5s;
+}
+.animal-info:hover{
+    cursor: pointer;
+}
+.animal-list{
+    width: 100%;
+    height: 270px;
+    transition: all 0.5s;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding-left: 2%;
+    padding-top: 1%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(225, 225, 225, 0.38);
+}
+.animal-list img{
+    width: 98%;
+    height: 98%;
+}
+.img-rounded{
+    border-radius: 5%;
+}
+.foot{
+    width: 100%;
+    height: 167px;
+    border-bottom: 1px solid silver;
+    background-image: url("../image/jpg_b.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.foot_p{
+    width: 80%;
+    height: 50px;
+    line-height: 30px;
+    margin: 40px auto;
+    /*border: 1px solid silver;*/
+}
+.foot_p p{
+    font-size: 12px;
+    text-align: center;
+    color: #7c7c7c;
+}

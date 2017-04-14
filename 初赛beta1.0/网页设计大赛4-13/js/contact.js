@@ -1,0 +1,34 @@
+/**
+ * Created by 81964 on 2017/4/11.
+ */
+$(function(){
+    $(".name").blur(function(){
+        if($(".name").val()=="姓名"||$(".name").val()==""){
+            $(".name").val("请正确输入姓名！").css("color","red");
+        }
+    }).focus(function(){
+       $(".name").val("").css("color","#9999B2");
+    });
+    $(".email").blur(function(){
+        if($(".email").val()=="Email"||$(".email").val()==""||$(".email").val().indexOf("@")==-1){
+            $(".email").val("请正确输入邮箱！").css("color","red");
+        }
+    }).focus(function(){
+        $(".email").val("").css("color","#9999B2");
+    });
+    $(".phone").blur(function(){
+        if($(".phone").val()=="phone"||$(".phone").val()==""||isNaN($(".phone")!=1)){
+            $(".phone").val("请正确输入电话！").css("color","red");
+        }
+    }).focus(function(){
+        $(".phone").val("").css("color","#9999B2");
+    });
+    $(".address").blur(function(){
+        if($(".address").val()=="地址"||$(".address").val()==""){
+            $(".address").val("请正确输入地址！").css("color","red");
+        }
+    }).focus(function(){
+        $(".address").val("").css("color","#9999B2");
+    });
+
+});
