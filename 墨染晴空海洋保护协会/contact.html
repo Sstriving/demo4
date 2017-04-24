@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row contact">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
             <div class="contact-image">
                 <ul class="list-unstyled" style="height: auto;width: 100%">
                     <li class="contact-li-info" style="margin-top: 0">
@@ -57,23 +57,23 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
             <div class="contact-info">
                 <div class="row"><div class="col-lg-12 contact-info-title">Your Request</div></div>
                 <form class="form-horizontal">
                     <div class="row form-group" style="margin-top: 20px;">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <input class="form-control name" type="text" placeholder="姓名"/>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <input class="form-control email" type="email" placeholder="Email"/>
                         </div>
                     </div>
                     <div class="row form-group" style="margin-top: 20px;">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <input class="form-control phone" type="text" placeholder="电话"/>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <input class="form-control address" type="email" placeholder="地址"/>
                         </div>
                     </div>
@@ -82,13 +82,48 @@
                             <textarea class="form-control textbox" style="height: 170px" placeholder="写下你想说的..."></textarea>
                         </div>
                     </div>
-                    <div class="row succeed">
-                        <div class="col-lg-2 pull-right" style="margin-left: 200px">
-                            <button class="btn btn-info btn-group-lg btn_11" style="margin-left: 0px;width: 85px">提交</button>
-                        </div>
-                    </div>
                 </form>
+                <div class="row succeed">
+                    <div class="col-lg-2 pull-right" style="margin-left: 200px">
+                        <button class="btn btn-info btn-group-lg btn_11" style="margin-left: 0px;width: 85px">提交</button>
+                    </div>
+                </div>
+                <input type="button" style="display: none" id="btn-2" value="清空"/>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <h1 class="h11">留言板</h1>
+    </div>
+    <div class="row message">
+        <div class="col-xs-12">
+            <ul class="list-unstyled">
+                <li class="list-info">
+                    <p class="p-1">姓名：</p>
+                    <p class="p-2">时间：</p>
+                    <p class="p-3">内容：</p>
+                </li>
+                <li class="list-info">
+                    <p class="p-1">姓名：</p>
+                    <p class="p-2">时间：</p>
+                    <p class="p-3">内容：</p>
+                </li>
+                <li class="list-info">
+                    <p class="p-1">姓名：</p>
+                    <p class="p-2">时间：</p>
+                    <p class="p-3">内容：</p>
+                </li>
+                <li class="list-info">
+                    <p class="p-1">姓名：</p>
+                    <p class="p-2">时间：</p>
+                    <p class="p-3">内容：</p>
+                </li>
+                <li class="list-info">
+                    <p class="p-1">姓名：</p>
+                    <p class="p-2">时间：</p>
+                    <p class="p-3">内容：</p>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -101,5 +136,78 @@
     </div>
 </div>
 <script src="js/contact.js"></script>
+<script>
+//    留言板功能
+    var tt=0;
+//    点击留言板出现清空按钮
+    $(".h11").click(function(){
+        if(tt>3){
+            $("#btn-2").show();
+        }
+        tt++;
+    });
+    loadstorage();
+   //提交按钮
+    $(".btn_11").click(function(){
+        savestorage();
+    });
+    $("#btn-2").click(function(){
+        clearstorage();
+    });
+//读数据
+    function savestorage() {
+        var txt = $(".textbox").val();
+        var name = $(".name").val();
+        var date = new Date().getTime();
+        if(txt!=""||name!=""){
+            localStorage.setItem(date, txt+"@"+name);
+            loadstorage();
+        }
+        else{
+            alert("内容不能为空！");
+        }
+
+    }
+//写数据
+    function loadstorage() {
+        var j=0;
+        var name_1;
+        var txt_1;
+        for(var i=localStorage.length-1;i>localStorage.length-6&&i>-1;i--)
+        {
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                if (value.split("@").length == 2) {
+                     name_1 = value.split("@")[1];
+                     txt_1 = value.split("@")[0];
+                }
+                else {
+                     name_1 = "";
+                     txt_1 = value.split("@")[0]
+                }
+                var date = new Date();
+                date.setTime(key);
+                var datestr = date.toLocaleTimeString();
+                $(".p-1").eq(j).html("姓名：" + name_1);
+                $(".p-2").eq(j).html("时间：" + datestr);
+                $(".p-3").eq(j).html("内容：" + txt_1);
+                j++;
+        }
+    // 对应li出现和影藏
+        $(".list-info").each(function(index){
+            if(index>localStorage.length-1){
+                $(".list-info").eq(index).hide();
+            }
+            else{
+                $(this).show();
+            }
+        })
+    }
+    //清除留言板
+    function clearstorage()
+    {
+        localStorage.clear();
+    }
+</script>
 </body>
 </html>

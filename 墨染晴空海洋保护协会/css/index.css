@@ -1,147 +1,207 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    /*text-align: center;*/
 }
-body,html{
+
+body, html {
     width: 100%;
     height: 100%;
 }
-.bg_1{
+
+.bg_1 {
     width: 100%;
-    height: 110%;
+    height: 100%;
     position: fixed;
     z-index: -1;
 }
-.bg_1 img{
+
+.bg_1 img {
     width: 100%;
     height: 100%;
     opacity: 0.9;
 }
-.title{
+
+.title {
     width: 100%;
     height: 7%;
     position: fixed;
     z-index: 9;
     transition: all 0.8s;
 }
-.title_1{
+
+.title_1 {
     width: 100%;
     height: 100%;
 
 }
-.logo{
+
+.logo {
     width: 5%;
     height: 90%;
     margin-top: 0.3%;
     margin-left: 5%;
     /*display: none;*/
 }
-.logo img{
+
+.logo img {
     height: 90%;
 }
-.ul_1{
+
+.ul_1 {
     /*width: 50%;*/
     /*margin-left: 45%;*/
     height: 100%;
     color: #DDDDDD;
     position: relative;
 }
-.li_list{
+
+.li_list {
     float: left;
     list-style: none;
     width: 19%;
     height: 100%;
     text-align: center;
-    font-size: 1.1vw;
-    transition: all 0.8s;
+    font-size: 2rem;
+    transition: all 0.5s;
 }
-.li_list a{
-    color:#DDDDDD;
+
+.li_list a {
+    color: #DDDDDD;
     text-decoration: none;
 }
-.li_list:hover,.li_list a:hover{
+
+ .li_list a:hover {
     color: white;
-    cursor:pointer;
+    cursor: pointer;
 }
-.txt{
+.li_list:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.txt {
     width: 100%;
-    height: 100%;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
-.txt p{
+
+.txt p {
     font-size: 3vw;
     color: white;
     font-weight: 700;
     letter-spacing: 5px;
 }
-.txt_1{
+
+.center {
     width: 100%;
-    height: 40%;
-    margin-top:5% ;
-    transition: all 1.5s;
-}
-.center{
-    width: 100%;
-    height: 150%;
     background-color: white;
     position: relative;
 }
-.center_1,.center_11{
+
+.center_1, .center_11 {
     padding-top: 2%;
     /*width: 50%;*/
     height: 15%;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     text-align: center;
-    filter:alpha(opacity:0); opacity:0;
+    filter: alpha(opacity:0);
+    opacity: 1;
 }
-.p_1{
+
+.p_1 {
     font-size: 3vw;
     color: #4282CA;
 }
-.p_2{
+
+.p_2 {
     font-size: 1vw;
     margin-top: 40px;
 }
-.p_3{
+
+.p_3 {
     font-size: 1vw;
     margin-top: 20px;
 }
-.p_4{
-    font-size: 1.5vw;
-    color: #4282CA;
-    margin-bottom: 20px;
+
+.content1 {
+    margin-top: 150px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
-.center_2,.center_25,.center_26{
+
+.center_2, .center_25, .center_26 {
     width: 100%;
-    height: 18.5%;
     position: relative;
     overflow: hidden;
 }
-.center_21{
+
+.center_21 {
     /*width: 30%;*/
-    height: 85%;
     margin-top: 2.5%;
     overflow: hidden;
     float: left;
     margin-left: -40%;
     border-radius: 5px;
 }
-.center_21 img{
+
+.img_1 {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -1500px;
+    /*width: 350px;*/
+}
+
+.text_1 {
+    position: relative;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: -1500px;
+    border: 1px solid #4282CA;
+    box-shadow: 3px 3px 5px #4282CA;
+    margin-top: 10px;
+    overflow: hidden;
+    /*width: 350px;*/
+}
+.img_1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.txt_1 {
+    position: relative;
+    font-size: 1.4rem;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    transition: all 0.8s;
+    /*width: 350px;*/
+}
+
+.p_4 {
+    font-size: 2.4rem;
+    color: #4282CA;
+    margin-bottom: 10px;
+}
+
+.center_21 img {
     width: 100%;
     border-radius: 20px;
     height: 100%;
 }
-.center_22{
+
+.center_22 {
     /*width: 30%;*/
-    height: 85%;
     margin-top: 2.5%;
     overflow: hidden;
     float: right;
     font-size: 1vw;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     margin-right: -40%;
     color: #567377;
     border-radius: 20px;
@@ -149,40 +209,41 @@ body,html{
     border: 2px solid silver;
     box-shadow: 2px 2px 4px #4282CA;
 }
-.content{
+
+.content {
     width: 100%;
     height: 260%;
     background-color: white;
     margin-top: 10%;
 }
-.center_3,.center_4{
+
+.center_3, .center_4 {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 33%;
-    margin-top: 2%;
-    /*border: 1px solid red;*/
-    display: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
-.center_31,.center_32{
+
+.center_31, .center_32 {
     width: 20%;
-    height: 85%;
     margin-top: 2%;
     overflow: hidden;
     text-align: center;
     /*box-shadow: 0 0 5px #888888;*/
-    box-shadow: 0 0 10px #C4A87E  inset;
+    box-shadow: 0 0 10px #C4A87E inset;
     float: left;
     background-color: white;
     position: relative;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
-.dw1{
+
+.dw1 {
     width: 90%;
-    height: 65%;
     margin-top: 3%;
 }
-.p_5{
+
+.p_5 {
     width: 80%;
     margin: 0 auto;
     margin-top: 1%;
@@ -191,20 +252,24 @@ body,html{
     color: #5D5D5D;
     border-bottom: 1px solid #EEEEEE;
 }
-.p_6{
+
+.p_6 {
     margin-top: 4%;
 }
-.p_6 a{
+
+.p_6 a {
     font-size: 1vw;
     color: #979797;
     text-decoration: none;
 }
-.p_6 a:hover{
+
+.p_6 a:hover {
     color: #4282CA;
-    font-size: 1.3vw;
-    cursor:pointer;
+    font-size: 1vw;
+    cursor: pointer;
 }
-.foot{
+
+.foot {
     width: 100%;
     height: 167px;
     border-top: 1px solid #EBF8FE;
@@ -214,18 +279,21 @@ body,html{
     background-size: 100% 100%;
 
 }
-.foot_p{
+
+.foot_p {
     width: 60%;
     height: 100px;
     line-height: 30px;
     margin: 32px auto;
 }
-.foot_p p{
+
+.foot_p p {
     font-size: 12px;
     text-align: center;
     color: #7c7c7c;
 }
-.npc{
+
+.npc {
     width: 400px;
     height: 60%;
     position: fixed;
@@ -237,44 +305,51 @@ body,html{
     display: none;
     border: 2px solid #C9E2F2;
 }
-.chat{
+
+.chat {
     width: 95%;
     margin: 0 auto;
     margin-top: 2%;
     height: 85%;
 }
-.chat ul{
+
+.chat ul {
     width: 100%;
     height: 100%;
-    pointer-events:none;
+    pointer-events: none;
 }
-.chat li{
+
+.chat li {
     list-style: none;
     width: 100%;
     height: 25%;
-    pointer-events:none;
+    pointer-events: none;
     color: #4da8eb;
     font-size: 1vw;
 }
-.enter{
+
+.enter {
     width: 100%;
     height: 15%;
     border-top: 1px solid silver;
 }
-.bit{
+
+.bit {
     height: 10%;
     width: 10%;
     float: right;
-    font-size: 2vw;
+    font-size: 40px;
     margin-right: 1%;
     margin-top: -1%;
     text-align: right;
 }
-.bit:hover{
+
+.bit:hover {
     cursor: pointer;
     color: #00A3F0;
 }
-#chat_1{
+
+#chat_1 {
     width: 75%;
     height: 60%;
     margin-left: 3%;
@@ -283,10 +358,11 @@ body,html{
     outline: none;
     border: 3px solid rgba(92, 158, 215, 0.8);
     color: silver;
-    font-size:1vw;
+    font-size: 1vw;
     float: left;
 }
-#chat_2{
+
+#chat_2 {
     margin-top: 3%;
     margin-right: 2%;
     width: 15%;
@@ -299,81 +375,93 @@ body,html{
     box-shadow: none;
     border: none;
 }
-#chat_2:hover{
+
+#chat_2:hover {
     opacity: 0.5;
 }
-.rob{
+
+.rob {
     display: none;
-    position:fixed;
+    position: fixed;
     width: 6%;
     min-width: 100px;
-    margin-top:200px;
+    margin-top: 200px;
     right: 10px;
     z-index: 5;
     transition: all 1.5s;
 }
-.rob:hover{
+
+.rob:hover {
     cursor: pointer;
 }
-.rob img{
+
+.rob img {
     width: 100%;
     height: 100%;
 }
-.us{
+
+.us {
     width: 100%;
     margin-top: 10%;
-    height: 70%;
     background-color: white;
 }
-.us1{
-    width: 90%;
-    height: 40%;
-}
-.p_7{
+
+.p_7 {
     font-size: 50px;
     margin-top: 100px;
+    padding-top: 20px;
 }
-.p_8{
+
+.p_8 {
     font-size: 16px;
 }
-.div_list{
+
+.div_list {
     width: 200px;
     height: 200px;
     border-radius: 200px;
     overflow: hidden;
     position: relative;
 }
-.div_list img{
-    width: 100%;
+
+.div_list img {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
     z-index: 2;
 }
-.idt{
+
+.idt {
     width: 850px;
     position: relative;
 }
-.idt li{
+
+.idt li {
     overflow: hidden;
     margin-top: 5%;
 }
-.lj{
+
+.lj {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     position: absolute;
-    z-index:2;
+    z-index: 2;
     border: 30px solid rgba(92, 158, 215, 0.08);
 }
-.guodu{
+
+.guodu {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     position: absolute;
-    z-index:3;
-    transition: all 0.8s;
+    z-index: 3;
+    transition: all 0.4s;
     border: 1px solid silver;
 }
-.info{
+
+.info {
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -384,14 +472,63 @@ body,html{
     z-index: 4;
     display: none;
 }
-.footgd{
+
+.footgd {
+    margin-top: -20px;
+    margin-bottom: -20px;
     width: 100%;
-    height: 7%;
-    background: -webkit-linear-gradient(top, white 0%,#EBF8FE 100%);
-    background: -o-linear-gradient(top, white 0%,#EBF8FE 100%);
-    background: -ms-linear-gradient(top, white 0%,#EBF8FE 100%)
+    height: 100px;
+    background: -webkit-linear-gradient(top, white 0%, #EBF8FE 100%);
+    background: -o-linear-gradient(top, white 0%, #EBF8FE 100%);
+    background: -ms-linear-gradient(top, white 0%, #EBF8FE 100%)
 }
-@media all and (min-width: 840px ) and (max-width: 1200px){
+
+.tu {
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tu {
+        display: block;
+    }
+    .img_1,.text_1{
+        clear: both;
+        position: relative;
+        font-size: 3vw;
+    }
+    .ul_1 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        position: absolute;
+        background-color: rgba(18, 18, 18, 0.25);
+        height: auto;
+        width: 25%;
+        display: none;
+        right: 3.4em;
+    }
+
+    .li_list {
+        clear: both;
+        width: 100%;
+        /*border-bottom: 1px solid silver;*/
+        padding: 4px;
+        /*line-height: 55px;*/
+    }
+    .li_list:hover{
+        background-color: rgba(0, 0, 0, 0.51);
+    }
+}
+@media screen and (max-width: 980px){
+    .text_1{
+        font-size: 1.6vw;
+    }
+}
+/*@media all and (min-width: 840px ) and (max-width: 1200px){
     .txt_1{
         width: 100%;
         height: 40%;
@@ -435,4 +572,4 @@ body,html{
     .center_21{
         width: 80%;
     }
-}
+}*/

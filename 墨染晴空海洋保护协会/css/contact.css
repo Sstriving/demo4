@@ -106,6 +106,32 @@ body,html{
     height: 200px;
     font-size: 18px;
 }
+.message{
+    width: 80%;
+    margin: 0 auto;
+    border: 3px double rgba(0, 178, 255, 0.6);
+    border-radius: 20px;
+}
+.h11{
+    color: #00A3F0;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.list-info{
+   border-bottom: 1px dashed silver;
+    display: none;
+}
+.p-1{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.p-2{
+
+}
+.p-3{
+    padding-bottom: 30px;
+}
 .foot{
     width: 100%;
     height: 167px;
@@ -132,4 +158,9 @@ body,html{
     background: -webkit-linear-gradient(top, white 0%,#EBF8FE 100%);
     background: -o-linear-gradient(top, white 0%,#EBF8FE 100%);
     background: -ms-linear-gradient(top, white 0%,#EBF8FE 100%)
+}
+@media all and (max-width: 1200px) {
+    .contact-info{
+        margin-top: 100px;
+    }
 }
